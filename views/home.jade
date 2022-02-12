@@ -2,14 +2,46 @@ doctype html
 
 html
     head
-        title Register
+        title Farhan Daemi
         link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css")
         link(rel="shortcut icon", href="/img/logo.png", type="image/x-icon")
         script(src="/js/jquery-3.5.1.min.js")
         meta(name="viewport" content="width=device-width, initial-scale=1.0")
-        //- meta(name="theme-color" content="#050507")
-        //- script(src="/js/index.js")
         link(rel='stylesheet', href='/css/home.css')
     
     body
-        h1 This is home page
+        nav 
+            #nav-collapse-button
+                i.fa.fa-bars
+            #nav-collapse-view 
+                a.active(href="#") Home 
+                a(href="#") About
+                a(href="#") Skills
+                a(href="#") Resume
+                a(href="#") Contact
+            .languages 
+                .lang#farsi FA 
+                .lang#english.active EN
+        header 
+            canvas(id="nokey" width="800" height="800")
+            .top-info 
+                .hello 
+                    .line 
+                    .text HELLO
+                h1.name I'm 
+                    .red Farhan 
+                    | Daemi
+                p A professional full-stack web and application developer, 
+                a.button(href="#")  MORE ABOUT ME
+                .socials
+                    a(href="https://instagram.com/fdmxfarhan" target="_blank") 
+                        i.fa.fa-instagram 
+                    a(href="https://t.me/fdmxfarhan" target="_blank") 
+                        i.fa.fa-telegram 
+                    a(href="mailto:fdmxfarhan@yahoo.com") 
+                        i.fa.fa-envelope 
+                    a(href="tel:+989336448037") 
+                        i.fa.fa-phone 
+                    
+        script(src="/js/home.js") 
+        script(src="/js/graph.js") 
