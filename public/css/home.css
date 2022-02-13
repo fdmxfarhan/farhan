@@ -24,11 +24,17 @@
     --light: #EDF1FD;
     --gray: #3F4253;
     --lightgray: #7D7E80;
+    --lightergray: #cbccce;
     --red: rgb(252, 3, 57);
     --green: rgb(52, 214, 52);
-    --blue: rgb(0, 140, 255);
+    --blue: rgb(75, 163, 235);
     --textcolor: rgb(29, 29, 29);
 }
+html{scroll-behavior: smooth;}
+body::-webkit-scrollbar {width: 0.5vw;}
+body::-webkit-scrollbar-track {background: var(--lightergray);}
+body::-webkit-scrollbar-thumb {background: var(--lightgray);}
+body::-webkit-scrollbar-thumb:hover{background: var(--gray);}
 body{
     margin: 0;
     padding: 0;
@@ -38,6 +44,10 @@ body{
     direction: ltr;
     background-color: white;
     /* background-color: var(--light); */
+}
+a{
+    text-decoration: none;
+    font-family: 'iransans';
 }
 .transparent-modal{
     display: none;
@@ -71,7 +81,7 @@ body{
     }
     nav #nav-collapse-view a{
         color: var(--gray);
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-family: 'iransans';
         font-size: 1.1vw;
         text-decoration: none;
         padding: 0.4vw 1vw;
@@ -125,12 +135,12 @@ body{
     header .top-info .hello .text{
         float: left;
         color: var(--lightgray);
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-family: 'iransans';
         font-size: 1vw;
         font-weight: bold;
     }
     header .top-info h1.name{
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-family: 'iransans';
         font-size: 4vw;
         margin: 0;
         padding: 0;
@@ -144,15 +154,15 @@ body{
     header .top-info p{
         margin: 0;
         padding: 0;
-        margin-top: 1vw;
+        /* margin-top: 1vw; */
         color: var(--gray);
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-family: 'iransans';
         font-size: 1vw;
     }
     header .top-info a.button{
         background-color: var(--red);
         padding: 0.5vw 1.3vw;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-family: 'iransans';
         font-size: 1vw;
         color: white;
         text-decoration: none;
@@ -177,5 +187,134 @@ body{
     }
     header .top-info .socials a:hover{
         color: var(--blue);
+    }
+    header .top-image{
+        position: absolute;
+        top: 10vw;
+        right: 18%;
+        width: 20vw;
+    }
+    header .top-image img{
+        width: 100%;
+        display: block;
+    }
+    .center-img{
+        margin: auto;
+        width: 45%;
+        margin-top: 10vw;
+    }
+    .center-img img{
+        width: 100%;
+    }
+    .dark-content {
+        margin-top: -0.7vw;
+        background-color: var(--dark);
+        color: white;
+        /* z-index: 100; */
+        /* overflow: hidden; */
+    }
+    .dark-content .text{
+        width: 60%;
+        margin: 0 auto;
+        overflow: hidden;
+        padding: 3vw 0;
+        text-align: center;
+        padding-bottom: 13vw;
+    }
+    .dark-content .text h1{
+        font-family: 'iransans';
+        font-size: 2vw;
+    }
+    .dark-content .text p{
+        font-family: 'iransans';
+        font-size: 1.3vw;
+        color: var(--lightergray);
+    }
+    .triple-content {
+        width: 80%;
+        background-color: white;
+        margin: auto;
+        border-radius: 1vw;
+        /* border: var(--lightergray) 0.1vw solid; */
+        margin-top: -8vw;
+        overflow: hidden;
+        margin-bottom: 3vw;
+        box-shadow: 0 0.3vw 0.6vw 0.1vw rgba(0, 0, 0, 0.1);
+    }
+    .triple-content .column{
+        float: right;
+        width: 33%;
+        text-align: center;
+        /* padding-bottom: 5vw; */
+        height: 52vw;
+    }
+    .triple-content .column img.icon{
+        height: 3vw;
+        display: block;
+        margin: 3vw auto;
+        margin-top: 5vw;
+    }
+    .triple-content .column h1.name{
+        color: var(--dark);
+        font-family: 'iransans';
+        font-size: 1.7vw;
+    }
+    .triple-content .column h1.app{
+        color: var(--blue);
+        font-family: 'iransans';
+        font-size: 1.2vw;
+        margin-top: 3vw;
+    }
+    .triple-content .column p{
+        width: 70%;
+        margin: auto;
+    }
+    .triple-content .column.bordered{border-left: var(--lightergray) 0.1vw solid;}
+    .recent-work{
+        text-align: center;
+        margin-top: 10vw;
+    }
+    .recent-work h1.title{
+        font-family: 'iransans';
+        font-size: 2vw;
+        color: var(--dark);
+        margin: 0;
+        padding: 0;
+    }
+    .recent-work p{
+        font-family: 'iransans';
+        font-size: 1.2vw;
+        color: var(--gray);
+        margin: 0;
+        padding: 0;
+    }
+    .recent-work p a{
+        color: var(--blue);
+    }
+    .recent-work p a:hover{
+        color: var(--hover);
+    }
+    .recent-work .cards-view{
+        overflow: hidden;
+        width: 80%;
+        margin: 2vw auto;
+    }
+    .recent-work .cards-view a.card{
+        width: 23%;
+        display: block;
+        margin: 1vw 1%;
+        float: left;
+        overflow: hidden;
+        border-radius: 0.7vw;
+        cursor: pointer;
+        height: 11vw;
+    }
+    .recent-work .cards-view a.card img{
+        width: 100%;
+        transition-duration: 500ms;
+        height: 11vw;
+    }
+    .recent-work .cards-view a.card:hover img{
+        filter: brightness(0.4);
     }
 }
