@@ -5,6 +5,7 @@ var bodyparser = require('body-parser');
 var multer = require('multer');
 var mkdirp = require('mkdirp');
 const extract = require('extract-zip')
+const { exec } = require("child_process");
 var { ensureAuthenticated } = require('../config/auth');
 
 router.use(bodyparser.urlencoded({ extended: true }));
@@ -18,6 +19,20 @@ var storage = multer.diskStorage({
     }
 });
 var upload = multer({ storage: storage });
+
+exec("cp ~/rcj-soccer-sim/controllers/rcj_soccer_referee_supervisor/reflog/1_-_1_-_The_Blues_vs_The_Yellows-20220308T091427.mp4 ~/farhan/public/files/", (error, stdout, stderr) => {
+    if (error) {
+        console.log(`error: ${error.message}`);
+        return;
+    }
+    if (stderr) {
+        console.log(`stderr: ${stderr}`);
+        return;
+    }
+    console.log(`stdout: ${stdout}`);
+});
+
+
 
 router.get('/', (req, res, next) => {
     res.render('./rcj/home', {
