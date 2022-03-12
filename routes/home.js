@@ -3,7 +3,9 @@ var router = express.Router();
 const { ensureAuthenticated } = require('../config/auth');
 
 router.get('/', (req, res, next) => {
-    // res.redirect('/users/login');
+    res.redirect('/rcj');
+});
+router.get('/home', (req, res, next) => {
     res.render('home');
 });
 
