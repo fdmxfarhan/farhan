@@ -3,10 +3,14 @@ var router = express.Router();
 const { ensureAuthenticated } = require('../config/auth');
 
 router.get('/', (req, res, next) => {
-    res.redirect('/rcj');
+    res.render('home', {lang: 'EN'});
+    // res.redirect('/rcj');
 });
 router.get('/home', (req, res, next) => {
-    res.render('home');
+    res.render('home', {lang: 'EN'});
+});
+router.get('/about', (req, res, next) => {
+    res.render('about', {lang: 'EN'});
 });
 
 module.exports = router;

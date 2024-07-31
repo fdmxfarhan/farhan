@@ -15,7 +15,7 @@ html
                 i.fa.fa-bars
             #nav-collapse-view 
                 a.active(href="/") Home 
-                a(href="#") About
+                a(href="/about") About Me
                 a(href="#") Skills
                 a(href="#") Resume
                 a(href="#") Contact
@@ -31,7 +31,8 @@ html
                 h1.name I'm 
                     .red Farhan 
                     | Daemi
-                p A professional full-stack web and application developer, 
+                p A professional full-stack web and application developer,
+                p and an Electronic Engineer
                 a.button(href="#more-about-me")  MORE ABOUT ME
                 .socials
                     a(href="https://instagram.com/fdmxfarhan" target="_blank") 
@@ -44,7 +45,6 @@ html
                         i.fa.fa-phone 
             .top-image 
                 img(src="/img/mf-avatar.svg")
-        
         section.light
             .center-img
                 img(src="/img/hero.png")
@@ -65,6 +65,8 @@ html
                     .item Adobe XD 
                     .item Adobe PS 
                     .item Figma 
+                    .item .
+                    .item .
                 .column.bordered
                     img.icon(src="/img/frontend.png")
                     h1.name front-end
@@ -115,7 +117,8 @@ html
                         img(src="/img/recentwork/afanavaraneh.png")
                     a.card(href="https://helli10ouj.ir" target="_blank") 
                         img(src="/img/recentwork/ouj.png")
-                        
+        
         //- https://mattfarley.ca/
+        include ./components/footer
         script(src="/js/home.js") 
         script(src="/js/graph.js") 

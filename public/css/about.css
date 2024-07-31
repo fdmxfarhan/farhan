@@ -1,0 +1,98 @@
+@media only screen and (min-width: 800px) {
+    header.about-me{
+        width: 60%;
+        margin: auto;
+        margin-top: 5vw;
+        margin-bottom: 7vw;
+        text-align: center;
+    }
+    header.about-me h1{
+        color: var(--red);
+        font-size: 1.5vw;
+        margin-bottom: 0;
+    }
+    header.about-me p{
+        color: var(--gray);
+        font-size: 1vw;
+        margin-top: 0;
+    }
+    header.about-me img{
+        width: 20%;
+        display: block;
+        margin: auto;
+        border-radius: 30%;
+        /* opacity: 0.5; */
+    }
+    .event-view{
+        width: 80%;
+        margin: 3vw auto;
+        margin-bottom: 6vw;
+        overflow: hidden;
+    }
+    .event-view .description{
+        float: left;
+        width: 65%;
+        margin-right: 5%;
+    }
+    .event-view .description h1{
+        color: var(--purple);
+        padding: 0;
+        margin: 0;
+        font-size: 1.2vw;
+    }
+    .event-view .description p{
+        color: var(--text);
+        font-size: 1vw;
+        text-align: justify;
+        margin: 0;
+        margin-top: 0.8vw;
+        margin-bottom: 0.5vw;
+    }
+    .event-view .description .links a{
+        color: var(--blue);
+        margin-right: 1.5vw;
+        display: block;
+    }
+    .event-view .description .links a:hover{
+        color: var(--red);
+    }
+    .event-view .description .links a i{
+        font-size: 1.1vw;
+    }
+    .event-view .description .links .link-text{
+        display: inline;
+        padding-left: 0.5vw;
+        font-size: 0.9vw;
+    }
+    .event-view .description .time-and-loc{
+        /* margin-top: 1vw; */
+        overflow: hidden;
+    }
+    .event-view .description .time-and-loc .item{
+        margin-left: 2vw;
+        color: var(--lightgray);
+        font-size: 0.8vw;
+        float: right;
+    }
+    .event-view .description .time-and-loc .item i{
+        font-size: 0.9vw;
+        padding-right: 0.5vw;
+    }
+    
+    .event-view .image-view{
+        float: left;
+        width: 28%;
+    }
+    .event-view .image-view img{
+        width: 100%;
+        display: block;
+        border-radius: 1vw;
+        transition-duration: 500ms;
+        cursor: pointer;
+    }
+    .event-view .image-view img:hover{
+        opacity: 0.8;
+    }
+}
+@media only screen and (max-width: 800px) {
+}

@@ -1,0 +1,28 @@
+-if(lang == 'EN'){
+    nav 
+        #nav-collapse-button
+            i.fa.fa-bars
+        #nav-collapse-view 
+            a#nav-link1(href="/") Home 
+            a#nav-link2(href="/about") About Me
+            a#nav-link3(href="#") Skills
+            a#nav-link4(href="#") My CV
+            a#nav-link5(href="#") Contact
+        .languages 
+            a(href="/?lang=FA").lang#farsi(class="#{lang == 'FA'? 'active' : ''}") FA 
+            a(href="/?lang=EN").lang#english(class="#{lang == 'EN'? 'active' : ''}") EN
+-}else{
+    nav 
+        #nav-collapse-button
+            i.fa.fa-bars
+        #nav-collapse-view 
+            a.active(href="/") صفحه اصلی 
+            a(href="/#more-about-me") درباره ما
+            a(href="/#members") اعضا
+            a(href="/publication") مستندات 
+            a(href="/gallery") گالری 
+            a(href="/#") تماس با ما
+        .languages 
+            a(href="/?lang=FA").lang#farsi(class="#{lang == 'FA'? 'active' : ''}") FA 
+            a(href="/?lang=EN").lang#english(class="#{lang == 'EN'? 'active' : ''}") EN
+-}

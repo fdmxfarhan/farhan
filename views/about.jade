@@ -1,0 +1,169 @@
+extends layout
+
+block styles
+    link(rel="stylesheet", href="/css/about.css")
+block content
+    header.about-me
+        img(src="/img/ifel.jpg")
+        h1 My Recent Experiences
+        p You can see some of my recent experiences with all the details down below.
+    .event-view 
+        .description 
+            h1 Robocup 2023 
+            p I participated in Robocup 2023, Bordeaux, France, as the mentor of Metis team in junior soccer open weight league which is a challenge between students to make robots that play soccer in a 2x3m field with specific game rules. It was a very good experience leading a team in a competition like that. Also visiting other leagues and robots was so fun and interesting.
+            .links 
+                a(href="http://2023.robocup.org" target="__blank") 
+                    i.fa.fa-link
+                    .link-text Robocup 2023
+                a(href="https://github.com/fdmxfarhan/Metis-2023" target="__blank") 
+                    i.fa.fa-github
+                    .link-text All Source Codes
+            .time-and-loc 
+                .item
+                    i.fa.fa-map-marker
+                    | Bordeaux, France
+                .item 
+                    i.fa.fa-calendar 
+                    | June 13, 2023
+        .image-view 
+            img(src="/img/about/img-01.jpg")
+    .event-view 
+        .description 
+            h1 Iran-Open Robocup 2023 
+            p I was a referee in RCJ-Soccersim challenge, which was a programming challenge for simulated robots to play soccer. Also I was leading a team of 8 people in @Work industerial robots league, which is a league for major students to build industerial robots that can navigate to a position using lidar scanner and detect an object using image proccessing algorythms. Then take an object using a robotic arm and move the object to another place.
+            .links 
+                a(href="http://iranopenrobocup.ir" target="__blank") 
+                    i.fa.fa-link
+                    .link-text Iran-Open 2023 
+            .time-and-loc 
+                .item
+                    i.fa.fa-map-marker
+                    | Islamic Azad University; Science & Research Branch
+                .item 
+                    i.fa.fa-calendar 
+                    | April 1, 2023
+        .image-view 
+            img(src="/img/about/img-02.jpg")
+    .event-view 
+        .description 
+            h1 Iran Khodro R&D Center
+            p Continuing the K125 HVAC control panel for ITD and SANDEN company, I went to Iran Khodro Research and Developement center to test my software with the new product of the company which was a prototype car, RIRA. My role in this project was to develope a software that send the AC-ON/OFF command to the ECU of the car using CAN Bus interface which is a very common interface for communication between electrical units of a car.
+            .links 
+                a(href="https://www.ikco.ir/" target="__blank") 
+                    i.fa.fa-link
+                    .link-text Iran Khodro
+            .time-and-loc 
+                .item
+                    i.fa.fa-map-marker
+                    | IKCo, Tehran
+                .item 
+                    i.fa.fa-calendar 
+                    | August 30, 2022
+        .image-view 
+            img(src="/img/about/img-04.png")
+    .event-view 
+        .description 
+            h1 SANDEN-ITD Company
+            p I'm working about more than a year on some projects for ITD and SANDEN company in car industery. These projects included developing the hardware and software of HVAC control panel of SP100, K132 and K125 car which is a product of Iran-Khodro company. I also learned some new skills like cars CAN BUS interface, HVAC tempretare control strategies and vehical-industrial designing technics. Also I designed a windows application for ITD company's production line to test the products quality and store the data in a database to track after sell.
+            .links 
+                a(href="https://www.ikco.ir/" target="__blank") 
+                    i.fa.fa-link
+                    .link-text Iran Khodro
+            .time-and-loc 
+                .item
+                    i.fa.fa-map-marker
+                    | Alborz Industerial City, Qazvin
+                .item 
+                    i.fa.fa-calendar 
+                    | July 20, 2022
+        .image-view 
+            img(src="/img/about/img-03.jpg")
+    .event-view 
+        .description 
+            h1 @Work industerial Robot
+            p I started a group-project at the university during my bachelor studding. The main purpose of creating this team was to gain a new experience of working in a team for me and my friends. We started to build an industrial robot and every day we was learning new stuffs. We were planning to participate in Robocup 2023 and Iran Open 2023 competitions. After 3 month of hardwork, Prof. Ghasemzadeh, Manager of IKIU international university gave rewards to the team in an appreciation conferance.
+            .links 
+                a(href="http://ikiurobotic.ir" target="__blank") 
+                    i.fa.fa-link
+                    .link-text ikiurobotic 
+                a(href="https://github.com/fdmxfarhan/ikiurobotic" target="__blank") 
+                    i.fa.fa-github
+                    .link-text All the Sources and Designings
+                a(href="https://github.com/fdmxfarhan/ikiuroboticweb" target="__blank") 
+                    i.fa.fa-github
+                    .link-text website source code
+                
+            .time-and-loc 
+                .item
+                    i.fa.fa-map-marker
+                    | IKIU, Qazvin
+                .item 
+                    i.fa.fa-calendar 
+                    | January 10, 2023
+        .image-view 
+            img(src="/img/about/img-05.jpg")
+    .event-view 
+        .description 
+            h1 German Embassy School Tehran (DBST)
+            p Because of my experience in teaching computer programming and robotic to kids and also my english speaking was good enough, I was asked to work in DBST school and teach robotic in english to young age students. I started my jub in october 2022 and it was a part-time jub, one day a week. 
+            .links 
+                a(href="http://dbst.ir" target="__blank") 
+                    i.fa.fa-link
+                    .link-text DBST Website
+            .time-and-loc 
+                .item
+                    i.fa.fa-map-marker
+                    | German Embassy, Tehran
+                .item 
+                    i.fa.fa-calendar 
+                    | October 1, 2022
+        .image-view 
+            img(src="/img/about/img-06.jpg")
+    .event-view 
+        .description 
+            h1 Filestore Web App
+            p I was introduced to a filing company by one of my old coworkers. This company's jub was to collect all the data of estates and houses and give these data to other real estate companies to work on selling them. These data includes meterage, age, location, owner, deal type (like sell, rent or sell-rent), estate type and etc. Right now there is 12000 estates information is submited in this web application. Also I developed windows, MacOS, android and IOS applications that all connect to the main back-end and use the database to show the data to the users. 
+            .links 
+                a(href="https://fileestore.ir" target="__blank") 
+                    i.fa.fa-link
+                    .link-text FileStore 
+                a(href="https://github.com/fdmxfarhan/filestore" target="__blank") 
+                    i.fa.fa-github
+                    .link-text Source Code
+            .time-and-loc 
+                .item
+                    i.fa.fa-map-marker
+                    | Tehran
+                .item 
+                    i.fa.fa-calendar 
+                    | March 20, 2022
+        .image-view 
+            img(src="/img/about/img-06.png")
+    .event-view 
+        .description 
+            h1 Sibche Company
+            p I worked for Sibche company for less than a year in game develope team. Sibche is an App Store for IOS devices. We designed to hyper-casual games for both android and IOS platform using Unity software. In our team, my duty was programming the gameplay and AI. We published our games in google play store and apple app store and we used some marketing SDKs like Google Analytics, FireBase, Google Admob, Google Ads in our projects. I have also worked on another project with this company which was Commutement Management System for employees that stores the log of entering and exiting to the building in a database to analyse presence and apcense of all the employees in a month.
+            .links 
+                a(href="https://sibche.com/" target="__blank") 
+                    i.fa.fa-link
+                    .link-text Sibche App Store
+                a(href="https://github.com/fdmxfarhan/sibche-commute" target="__blank") 
+                    i.fa.fa-github
+                    .link-text Sibche Commute Management System (Source Code)
+                a(href="https://play.google.com/store/apps/details?id=com.sibad.fidgettrading" target="__blank") 
+                    i.fa.fa-android
+                    .link-text Fidget Trading
+                a(href="https://play.google.com/store/apps/details?id=com.sibad.dotswar" target="__blank") 
+                    i.fa.fa-android
+                    .link-text Dots War
+                
+            .time-and-loc 
+                .item
+                    i.fa.fa-map-marker
+                    | Sibche, Tehran
+                .item 
+                    i.fa.fa-calendar 
+                    | March 15, 2021
+        .image-view 
+            img(src="/img/about/img-08.jpg")
+    script(src="/js/about.js") 
