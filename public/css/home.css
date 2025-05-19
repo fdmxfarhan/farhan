@@ -15,6 +15,43 @@
     from {margin-top: 5vw;}
     to {margin-top: 0.5vw;}
 }
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes scaleIn {
+    from {
+        transform: scale(0.9);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
 :root {
     --purple: #1971e4;
     --yellow: #ffcc00;
@@ -676,4 +713,112 @@ a{
         display: inline;
         font-size: 2.8vw;
     }
+}
+/* Apply animations to elements */
+.top-info .hello {
+    animation: fadeInUp 0.8s ease-out;
+}
+
+.top-info h1.name {
+    animation: fadeInUp 0.8s ease-out 0.2s backwards;
+}
+
+.top-info p {
+    animation: fadeInUp 0.8s ease-out 0.4s backwards;
+}
+
+.top-info .button {
+    animation: fadeInUp 0.8s ease-out 0.6s backwards;
+}
+
+.top-info .socials {
+    animation: fadeInUp 0.8s ease-out 0.8s backwards;
+}
+
+.top-image img {
+    animation: scaleIn 1s ease-out;
+}
+
+.column {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.column:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.socials a {
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.socials a:hover {
+    transform: translateY(-3px);
+    color: #ff4444;
+}
+
+/* Smooth scroll behavior */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Nav animation */
+#nav-collapse-view a {
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+#nav-collapse-view a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background-color: #ff4444;
+    transition: width 0.3s ease;
+}
+
+#nav-collapse-view a:hover::after {
+    width: 100%;
+}
+
+/* Language switcher animation */
+.languages .lang {
+    transition: all 0.3s ease;
+}
+
+.languages .lang:hover {
+    transform: scale(1.1);
+}
+
+/* Button hover effect */
+.button {
+    transition: all 0.3s ease;
+}
+
+.button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(255, 68, 68, 0.3);
+}
+
+/* Add animation classes for scroll reveal */
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
 }
