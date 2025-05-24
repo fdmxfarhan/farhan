@@ -1,0 +1,38 @@
+doctype html
+
+html
+    head
+        title Farhan Daemi
+        link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css")
+        link(rel="shortcut icon", href="/img/logo.png", type="image/x-icon")
+        script(src="/js/jquery-3.5.1.min.js")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        link(rel='stylesheet', href='/css/home2.css')
+    
+    body
+        // Header with Full-width Image and Navbar
+        header.header
+            .header-image
+                img(src="/img/header-bg.jpg" alt="Header Background")
+                .overlay
+            nav.navbar
+                .nav-brand
+                    a(href="#home") FD
+                .nav-links
+                    a(href="#home") Home
+                    a(href="#about") About
+                    a(href="#resume") Resume
+                    a(href="#portfolio") Portfolio
+                    a(href="#contact") Contact
+                .nav-right
+                    .search-box
+                        input(type="text" placeholder="Search...")
+                        button(type="submit")
+                            i.fa.fa-search
+                    .social-icons
+                        a(href="https://github.com/yourusername" target="_blank")
+                            i.fa.fa-github
+                        a(href="https://linkedin.com/in/yourusername" target="_blank")
+                            i.fa.fa-linkedin
+                        a(href="https://twitter.com/yourusername" target="_blank")
+                            i.fa.fa-twitter

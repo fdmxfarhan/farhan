@@ -9,6 +9,9 @@ router.get('/', (req, res, next) => {
 router.get('/home', (req, res, next) => {
     res.render('home', {lang: 'EN'});
 });
+router.get('/home2', (req, res, next) => {
+    res.render('home2', {lang: 'EN'});
+});
 router.get('/about', (req, res, next) => {
     res.render('about', {lang: 'EN'});
 });
